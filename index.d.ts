@@ -170,7 +170,9 @@ declare namespace React {
     // tslint:disable-next-line:no-empty-interface
     interface HTMLFactory<T extends HTMLElement> extends DetailedHTMLFactory<AllHTMLAttributes<T>, T> {}
 
-    interface DetailedHTMLFactory<P extends HTMLAttributes<T>, T extends HTMLElement> extends DOMFactory<P, T> {
+    interface DetailedHTMLFactory<P extends HTMLAttributes<T>, T extends HTMLElement> extends DetailedHTMLFactoryBase<{[K in keyof P]: P[K] | null}, T> {}
+
+    interface DetailedHTMLFactoryBase<P extends HTMLAttributes<T>, T extends HTMLElement> extends DOMFactory<P, T> {
         (props?: ClassAttributes<T> & P | null, ...children: ReactNode[]): DetailedReactHTMLElement<P, T>;
     }
 
