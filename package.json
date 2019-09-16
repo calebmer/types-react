@@ -1,6 +1,6 @@
 {
-  "name": "@types/react",
-  "version": "16.9.2",
+  "name": "@calebmer-airtable/types-react",
+  "version": "16.9.2-patch.1",
   "description": "TypeScript definitions for React",
   "license": "MIT",
   "contributors": [
