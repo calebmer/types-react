@@ -110,8 +110,10 @@
   "types": "index",
   "scripts": {},
   "dependencies": {
-      "@types/prop-types": "*",
       "csstype": "^2.2.0"
+  },
+  "peerDependencies": {
+    "@types/prop-types": "*"
   },
   "typesPublisherContentHash": "83c2206d0fc3985c58e54bde8c44d67dff202769ed06c056da97c7cbd34d8c4c",
   "typeScriptVersion": "2.8"
