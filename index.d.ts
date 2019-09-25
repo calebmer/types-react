@@ -86,7 +86,7 @@ declare namespace React {
     type ComponentState = any;
 
     interface Attributes {
-        key?: Key;
+        key?: Key | null;
     }
     interface RefAttributes<T> extends Attributes {
         ref?: Ref<T>;
@@ -1217,7 +1217,7 @@ declare namespace React {
      */
     interface Props<T> {
         children?: ReactNode;
-        key?: Key;
+        key?: Key | null;
         ref?: LegacyRef<T>;
     }
 
